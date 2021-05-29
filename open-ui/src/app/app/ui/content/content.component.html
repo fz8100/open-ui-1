@@ -1,0 +1,40 @@
+<section class="home">
+    <div class="showcase">
+        <div class="left-column">
+            <div class="showcase-text">
+                <p class="heading">We make it Super</p>
+                <p class="heading">Simple</p>
+                <hr>
+            </div>
+            <div class="showcase-img-container">
+                <img src = "/assets/images/collect_img-video.png" class="banner" alt="open-image" title="open image">
+            </div>
+        </div>
+        <div class="right-column">
+            <app-calculator></app-calculator>
+        </div>
+    </div>
+</section>
+<section class="card-section">
+    <div class="container featured-cards">
+        <div class="card-items">
+            <ng-container *ngFor="let card of listOfCards">
+                <div class="card-item">
+                    <app-card [cardDetails]="card"></app-card>
+                </div>
+            </ng-container>
+        </div>
+        <div class="cta-panel">
+            <div class="cta-body">
+                <p class="heading">Boost you business</p>
+                <p class="heading">with Open</p>
+                <div><hr></div>
+                <br/>
+                <div class="desc">Get your hands on a term loan that’s crafted for your business</div>
+            </div>
+            <div class="cta-btn-wrapper">
+                <button class="cta-btn" type="button">Get an Open Account</button>
+            </div>
+        </div>
+    </div>
+</section>

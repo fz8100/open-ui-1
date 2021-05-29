@@ -1,0 +1,164 @@
+.cards-container{
+    display: flex;
+    padding-top: 250px;
+    justify-content: center;
+    
+}
+.card-wrapper{
+    display: flex;
+    /* background: transparent url(images/accounting_dots.svg) 0% 0% no-repeat padding-box; */
+    background-position-y: bottom;
+    padding-bottom: 50px;
+}
+.card{
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius:16px;
+    box-sizing: border-box;
+}
+.calculator-card{
+    width: 350px;
+    height: auto;
+    padding-bottom: 30px;
+}
+.card .card-header{
+    width: 100%;
+    background: #FAFBFD;
+    border-radius: 12px 12px 0 0;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: 500;
+}
+.card-body{
+    width:100%;
+    box-sizing: border-box;
+    background: #fff;
+    display:flex;
+    flex-flow: column;
+    padding: 20px 35px;
+}
+.card-body > .form-group{
+    display:flex;
+    flex-flow: column;
+    padding:8px 0;
+}
+.card-body > .form-group > .form-label{
+    /* font-family: 'Open Sans'; */
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight:500;
+}
+.calculated-card{
+    /* width: 20%; */
+    height: 300px;
+    align-self: center;
+    margin-left: 10px;
+    border-radius: 0 16px 16px 0;
+    background: #6B389D;
+    /* background: transparent url(images/soul-wave.png) 0% 0% no-repeat padding-box; */
+}
+.calc-card-body{
+    padding:50px 25px;
+}
+
+.info-label{
+    font-size:12px;
+    /* font-family:'Open Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    opacity:0.8;
+}
+.info-amount{
+    font-size:24px;
+    font-family: 'Open Sans', sans-serif;
+    margin:0 0;
+    color:#fff;
+}
+.calc-card-body .emi{
+    padding-top:25px;
+}
+.call-to-action{
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    opacity: 1;
+    color:#663399;
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight:600;
+}
+.call-to-action:hover{
+    color: #fff;
+    cursor: pointer;
+    background: #492672;
+    opacity: 0.9;
+    border: 2px solid #663399;
+    box-shadow: 0px 0px 5px #333;
+}
+.slider-wrapper{
+    padding:5px 0;
+}
+.slider-value , ::ng-deep .p-inputtext{
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+}
+::ng-deep .p-dropdown{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+::ng-deep .p-dropdown-open, ::ng-deep .p-focus{
+    box-shadow: none !important;
+}
+::ng-deep .p-dropdown-label{
+    padding: 5px;
+    padding-top: 0;
+}
+.row-layout{
+    display:flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background:purple;
+}
+::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+    background: #ffffff;
+    border: 2px solid purple;
+}
+::ng-deep .p-inputswitch{
+    width: 1.5rem;
+    height: 1rem;
+}
+::ng-deep .p-inputswitch .p-inputswitch-slider:before{
+    width: 1rem;
+    height: 1rem;
+    left: -0.7rem;
+    top:60%;
+    border: 2px solid #ccc;
+}
+.emi-input{
+    border:none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    width:100%;
+}
+.emi-input:hover, .emi-input:focus{
+    border:none;
+    border-bottom: 2px solid #ccc;
+    box-shadow: none;
+}
+::ng-deep .p-slider-handle{
+    box-shadow: 0 0 3px 1px #ccc !important;
+    border: 5px solid #fff !important;
+}

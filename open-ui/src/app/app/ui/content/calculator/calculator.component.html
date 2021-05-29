@@ -1,0 +1,55 @@
+<div class="cards-container">
+    <div class="card-wrapper">
+
+        <div class="card calculator-card">
+            <div class="card-header">
+                Eligibility Calculator
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label class="form-label">Monthly Income</label>
+                    <div class="slider-wrapper">
+                        <p class="slider-value">{{monIncome | currency: 'INR':true}}</p>
+                        <p-slider [(ngModel)]="monIncome" [min]="100000" [step]="10000" [max]="300000"></p-slider>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Monthly Expanse</label>
+                    <div class="slider-wrapper">
+                        <p class="slider-value">{{monExpense  | currency: 'INR':true}}</p>
+                        <p-slider [(ngModel)]="monExpense" [min]="10000" [step]="1000" [max]="100000"></p-slider>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Monthly Expanse</label>
+                    <div class="slider-wrapper">
+                        <p-dropdown [options]="tenure" [(ngModel)]="selectedTenure" optionLabel="label"></p-dropdown>
+                    </div>
+                </div>
+                <div class="form-group row-layout">
+                    <label class="form-label">Do you have any existing loans?</label>
+                    <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
+                </div>
+                <div class="form-group" *ngIf="checked">
+                    <label class="form-label">EMI of existing loan(optional)</label>
+                    <div class="slider-wrapper">
+                        <input type="text" pInputText [(ngModel)]="emi" class="emi-input"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card calculated-card">
+            <div class="calc-card-body">
+                <div class="info-section">
+                    <label class="label info-label">Loan Amount</label>
+                    <p class="info-amount">1,00,000</p>
+                </div>
+                <div class="info-section emi">
+                    <label class="label info-label">Your EMI will be</label>
+                    <p class="info-amount">15,000</p>
+                </div>
+                <button class="call-to-action" type="button">GET MONEY</button>
+            </div>
+        </div>
+    </div>
+</div>
