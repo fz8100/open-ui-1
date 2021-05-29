@@ -93,6 +93,14 @@
     margin-top: 20px;
     font-weight:600;
 }
+.call-to-action:hover{
+    color: #fff;
+    cursor: pointer;
+    background: #492672;
+    opacity: 0.9;
+    border: 2px solid #663399;
+    box-shadow: 0px 0px 5px #333;
+}
 .slider-wrapper{
     padding:5px 0;
 }

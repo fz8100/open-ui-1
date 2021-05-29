@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { cards } from '../interfaces/interface';
 
 @Injectable({
@@ -35,9 +35,18 @@ export class CommonServiceService {
     }
   ];
 
+  isHeaderSticky$ = new BehaviorSubject<Boolean>(false);
+
+
   constructor() { }
 
   getCardsList(){
     return of(this.cardList)
+  }
+  setHeaderSticky(value:boolean){
+    this.isHeaderSticky$.next(value)
+  }
+  getStickyHeaderFlag(){
+    return this.isHeaderSticky$.asObservable();
   }
 }
