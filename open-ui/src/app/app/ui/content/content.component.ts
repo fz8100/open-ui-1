@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { cards } from 'src/app/interfaces/interface';
+import { CommonServiceService } from 'src/app/services/common-service.service';
 
 @Component({
   selector: 'app-content',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-
-  constructor() { }
+  listOfCards:cards[]=[];
+  constructor(private commonService:CommonServiceService) { }
 
   ngOnInit(): void {
+    this.commonService.getCardsList().subscribe((data:cards[])=>{
+      this.listOfCards = [...data]
+    })
   }
 
 }

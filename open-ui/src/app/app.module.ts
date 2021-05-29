@@ -7,6 +7,13 @@ import { UiComponent } from './app/ui/ui.component';
 import { HeaderComponent } from './app/ui/header/header.component';
 import { ContentComponent } from './app/ui/content/content.component';
 import { CalculatorComponent } from './app/ui/content/calculator/calculator.component';
+import { FormsModule } from '@angular/forms';
+import {SliderModule} from 'primeng/slider';
+import {InputTextModule} from 'primeng/inputtext';
+import {DropdownModule} from 'primeng/dropdown';
+import {InputSwitchModule} from 'primeng/inputswitch';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardComponent } from './app/ui/content/card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +21,18 @@ import { CalculatorComponent } from './app/ui/content/calculator/calculator.comp
     UiComponent,
     HeaderComponent,
     ContentComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    SliderModule,
+    BrowserAnimationsModule,
+    InputTextModule,
+    DropdownModule,
+    InputSwitchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

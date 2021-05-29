@@ -15,3 +15,15 @@
         </div>
     </div>
 </section>
+<section class="card-section">
+    <div class="container featured-cards">
+        <div class="card-items">
+            <ng-container *ngFor="let card of listOfCards">
+                <app-card [cardDetails]="card"></app-card>
+            </ng-container>
+        </div>
+        <div class="cta-panel">
+
+        </div>
+    </div>
+</section>

@@ -80,3 +80,10 @@
     background-position-y: bottom;
     /* background-image:  url(images/accounting_dots.svg); */
 }
+.featured-cards{
+    background: transparent url(/assets/images/sol_wave_bg.svg) 0% 0% no-repeat padding-box; 
+    height:500px;
+    display:flex;
+    margin-top:100px;
+    background-size: cover;
+}
