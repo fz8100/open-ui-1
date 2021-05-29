@@ -1,0 +1,94 @@
+.cards-container{
+    display: flex;
+    padding-top: 250px;
+    justify-content: center;
+    
+}
+.card-wrapper{
+    display: flex;
+    /* background: transparent url(images/accounting_dots.svg) 0% 0% no-repeat padding-box; */
+    background-position-y: bottom;
+    padding-bottom: 50px;
+}
+.card{
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius:16px;
+    box-sizing: border-box;
+}
+.calculator-card{
+    width: 300px;
+    height: 450px;
+}
+.card .card-header{
+    width: 100%;
+    background: #FAFBFD;
+    border-radius: 12px 12px 0 0;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: 500;
+}
+.card-body{
+    width:100%;
+    box-sizing: border-box;
+    background: #fff;
+    display:flex;
+    flex-flow: column;
+    padding:20px;
+}
+.card-body > .form-group{
+    display:flex;
+    flex-flow: column;
+    padding:10px 0;
+}
+.card-body > .form-group > .form-label{
+    /* font-family: 'Open Sans'; */
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight:500;
+}
+.calculated-card{
+    /* width: 20%; */
+    height: 300px;
+    align-self: center;
+    margin-left: 10px;
+    border-radius: 0 16px 16px 0;
+    background: #6B389D;
+    /* background: transparent url(images/soul-wave.png) 0% 0% no-repeat padding-box; */
+}
+.calc-card-body{
+    padding:50px 25px;
+}
+
+.info-label{
+    font-size:12px;
+    /* font-family:'Open Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    opacity:0.8;
+}
+.info-amount{
+    font-size:24px;
+    font-family: 'Open Sans', sans-serif;
+    margin:0 0;
+    color:#fff;
+}
+.calc-card-body .emi{
+    padding-top:25px;
+}
+.call-to-action{
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    opacity: 1;
+    color:#663399;
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight:600;
+}

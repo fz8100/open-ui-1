@@ -1,0 +1,82 @@
+.home{
+    margin-top: -150px;
+}
+.showcase{
+    display:flex;
+    justify-content:flex-end;
+    position: relative;
+    overflow-x: clip;
+    background: transparent url(/assets/images/accounting_dots.svg) 0% 0% no-repeat padding-box;
+    background-position-y: bottom;
+    background-position-x: right;
+    padding-bottom: 50px;
+}
+/* .left-column{
+    width:40%;
+    width: 571px;
+    height: 572px;
+    background: transparent url('images/blob-small.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+} */
+.left-column{
+    width: 45%;
+    /* width: 571px; */
+    height: 800px;
+    background: transparent url(/assets/images/blob-small.svg) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: 400px;
+    position: absolute;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.showcase-text{
+    align-self: flex-start;
+    margin-left: 0;
+    padding: 150px 0 40px 155px;
+}
+.showcase-text > p{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-weight: 600;
+    margin: 2px 0;
+}
+.showcase-text > hr{
+    height: 4px;
+    background: #000000;
+    width: 60%;
+    float: left;
+}
+.showcase-img-container{
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent url(/assets/images/accounting_dots.svg) 0% 0% no-repeat padding-box;
+    padding-left: 100px;
+    background-position-y: bottom;
+    background-position-x: right;
+    height: 315px;
+}
+.banner{
+    width:500px;
+}
+/* .right-column > img{
+    margin-top: -164px;
+    height: 800px;
+    object-fit: cover;
+    margin-right: -70px
+} */
+.right-column{
+    width: 55%;
+    background: transparent url(/assets/images/circle.svg) 0% 0% no-repeat padding-box;
+    height: 700px;
+    background-size: 900px;
+    background-position-x: left;
+    background-position-y: bottom;
+    /* background-image:  url(images/accounting_dots.svg); */
+}
