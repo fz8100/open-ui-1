@@ -6,7 +6,6 @@
 }
 .card-wrapper{
     display: flex;
-    /* background: transparent url(images/accounting_dots.svg) 0% 0% no-repeat padding-box; */
     background-position-y: bottom;
     padding-bottom: 50px;
 }
@@ -48,27 +47,24 @@
     padding:8px 0;
 }
 .card-body > .form-group > .form-label{
-    /* font-family: 'Open Sans'; */
     font-family: 'Montserrat';
     font-size: 12px;
     font-weight:500;
 }
 .calculated-card{
-    /* width: 20%; */
     height: 300px;
     align-self: center;
     margin-left: 10px;
     border-radius: 0 16px 16px 0;
     background: #6B389D;
-    /* background: transparent url(images/soul-wave.png) 0% 0% no-repeat padding-box; */
 }
 .calc-card-body{
     padding:50px 25px;
+    text-align: center;
 }
 
 .info-label{
     font-size:12px;
-    /* font-family:'Open Sans', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     color:#fff;
     opacity:0.8;
@@ -103,6 +99,15 @@
 }
 .slider-wrapper{
     padding:5px 0;
+}
+.input-wrapper{
+    position:relative;
+}
+.rupee-symbol{
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    padding:0
 }
 .slider-value , ::ng-deep .p-inputtext{
     margin: 0;
