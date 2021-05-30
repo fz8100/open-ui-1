@@ -11,16 +11,8 @@
     background-position-x: right;
     padding-bottom: 50px;
 }
-/* .left-column{
-    width:40%;
-    width: 571px;
-    height: 572px;
-    background: transparent url('images/blob-small.svg') 0% 0% no-repeat padding-box;
-    opacity: 1;
-} */
 .left-column{
     width: 45%;
-    /* width: 571px; */
     height: 800px;
     background: transparent url(/assets/images/blob-small.svg) 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -66,12 +58,6 @@
 .banner{
     width:500px;
 }
-/* .right-column > img{
-    margin-top: -164px;
-    height: 800px;
-    object-fit: cover;
-    margin-right: -70px
-} */
 .right-column{
     width: 55%;
     background: transparent url(/assets/images/circle.svg) 0% 0% no-repeat padding-box;
@@ -79,7 +65,6 @@
     background-size: 900px;
     background-position-x: left;
     background-position-y: bottom;
-    /* background-image:  url(images/accounting_dots.svg); */
 }
 .featured-cards{
     background: transparent url(/assets/images/sol_wave_bg.svg) 0% 0% no-repeat padding-box; 
